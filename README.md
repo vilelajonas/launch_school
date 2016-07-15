@@ -1,1 +1,1 @@
-# launch_school
+# This folder contains exercises from Launch School
