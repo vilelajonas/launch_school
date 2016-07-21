@@ -12,18 +12,20 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live',
           'fowl', 'veil', 'wolf', 'diet', 'vile', 'edit', 'tide',
           'flow', 'neon']
 
+all_anagrams = []
 words.each do |word|
-	anagrams = word.split 
+	new_anagram = word.split 
 	words.each do |word_2|
 		counter = 0
 		word_2.each_char do |char|
 			counter += 1 if word.include?(char)
 		end
-		if counter == word_2.length     # se word contem todas as letras de word_2 
-			# retornar uma array que contenha word
-			anagrams << word_2
-			# adicionar word_2 à
+		if counter == word_2.length     # word contains all characters of word_2? 
+			new_anagram << word_2
 		end
 	end
-	p anagrams
+	all_anagrams << new_anagram
 end
+
+all_anagrams.map! { |ana| ana.sort.uniq }
+all_anagrams.uniq.each { |ana| p ana }

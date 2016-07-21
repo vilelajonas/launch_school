@@ -1,0 +1,3 @@
+hash1 = { car: "Mercedes" }
+
+hash2 = { :car => "Mercedes" }

@@ -1,0 +1,8 @@
+Can hash values be arrays? Can you have an array of hashes? (give examples)
+
+Yes. Hash values can be arrays and it is possible to have an array of hashes.
+
+hash = { 1: ["a", "b", "c"], 2: ["x", "y", "z"] }
+
+array = [{color: "red", width: "50cm"}, {color: "yellow",
+																				 width: "100cm"}]

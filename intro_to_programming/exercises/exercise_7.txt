@@ -1,0 +1,1 @@
+A hash links each value to a key. 
