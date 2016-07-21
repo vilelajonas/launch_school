@@ -6,8 +6,10 @@ my_hash2 = {x => "some value"}
 
 What's the difference between the two hashes that were created?
 
-The difference is:
+ANSWER:
 
-- on my_hash the is is a symbol 
+In my_hash x is a symbol
 
-- on my_hash2 the key is the variable x which is "hi there"
+In my_hash2 x takes the value of the variable x as a key. 
+The same as 
+  my_hash2 = { "hi there" => "some value" }

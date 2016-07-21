@@ -6,6 +6,8 @@ end
 
 execute { puts "Hello from inside the execute method!" }
 
+ANSWER:
+
 It will print "Hello from inside the execute method!"
 
 and will return nil

@@ -1,0 +1,26 @@
+Look at the following programs...
+
+x = 0
+3.times do
+  x += 1
+end
+puts x
+
+and...
+
+y = 0
+3.times do
+  y += 1
+  x = y
+end
+puts x
+
+What does x print to the screen in each case? Do they both give errors? Are the errors different? Why?
+
+
+ANSWER:
+
+CASE 1: => 0 The return will be '3' because 'x' was declared before the block and than it's value is incremented 3 times by 1.
+
+
+CASE 2: => SOME ERROR WITH UNDEFINED VARIABLE OR METHOD X, because 'x' is being called outside the block where it is being declared.

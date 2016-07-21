@@ -1,0 +1,5 @@
+What is exception handling and what problem does it solve?
+
+ANSWER:
+
+  An exception is an error and occurs when something wrong happens with our code. It's usually accompanied by a text that gives us the clues for resolving the problem.
