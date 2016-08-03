@@ -1,0 +1,212 @@
+EXERCISE 1
+# What will the following code print? Why? Don't run it until you've attempted to answer.
+
+# def meal
+#   return 'Breakfast'
+# end
+
+# puts meal
+
+ANSWER:
+
+=> Breakfast
+
+Because it prints the return of meal method that is 'Breakfast'
+
+-----------------------------------
+EXERCISE 2
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  'Evening'
+end
+
+puts meal
+
+ANSWER:
+
+=> Evening
+
+Because it prints the result of the method meal that is 'Evening'
+
+-----------------------------------
+EXERCISE 3
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  return 'Breakfast'
+  'Dinner'
+end
+
+puts meal
+
+ANSWER:
+
+=> Breakfast
+
+meal will return 'Breakfast' even if it is not the last line, because of the word RETURN
+
+-----------------------------------
+EXERCISE 4
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  puts 'Dinner'
+  return 'Breakfast'
+end
+
+puts meal
+
+ANSWER:
+
+=> Dinner
+=> Breakfast
+
+meal method prints 'Dinner' and returns 'Breakfast'. So it will print both.
+
+-----------------------------------
+EXERCISE 5
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  'Dinner'
+  puts 'Dinner'
+end
+
+p meal
+
+MY ANSWER:
+
+=> DinnerDinner
+(WRONG)
+
+correct answer:
+=> Dinner
+=> nil
+
+-----------------------------------
+EXERCISE 6
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def meal
+  return 'Breakfast'
+  'Dinner'
+  puts 'Dinner'
+end
+
+puts meal
+
+MY ANSWER:
+
+=> Dinner
+=> nil
+
+The meal method prints 'Dinner', but the method returns nil which will be printed when we call puts meal.
+
+(WRONG!!)
+
+correct answer:
+
+I didn't see the return!!
+
+=> "Breakfast"
+
+-----------------------------------
+EXERCISE 7
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+  end
+end
+
+puts count_sheep
+
+MY ANSWER:
+
+It will print nothing. I think it will give an exception. sheep not defined.
+
+(wrong!!)
+
+-----------------------------------
+EXERCISE 8
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+  end
+  10
+end
+
+puts count_sheep
+
+MY_ANSWER:
+
+=> 0
+=> 1
+=> 2
+=> 3
+=> 4
+=> 10
+
+It will print the index of Integer#times and the last line of the method count_sheep that is 10. 
+
+-----------------------------------
+EXERCISE 9
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def count_sheep
+  5.times do |sheep|
+    puts sheep
+    if sheep >= 2
+      return
+    end
+  end
+end
+
+p count_sheep
+
+
+MY ANSWER:
+
+=> 0
+=> 1
+=> 2
+=> 2
+
+It will print from 0 to 2 and 2 again because 2 will be the return of count_sheep 
+
+(wrong)
+
+"In this case, return didn't provide a value. That's why the last output is nil (we used #p when invoking count_sheep so that nil is visible in the output)."
+
+-----------------------------------
+EXERCISE 10
+
+What will the following code print? Why? Don't run it until you've attempted to answer.
+
+def tricky_number
+  if true
+    number = 1
+  else
+    2
+  end
+end
+
+puts tricky_number
+
+MY ANSWER:
+
+=> 1
+
+tricky_number will always enter the if conditional and will return the last line that is the value 1 beeing assigned to the variable number. And this returns 1.
