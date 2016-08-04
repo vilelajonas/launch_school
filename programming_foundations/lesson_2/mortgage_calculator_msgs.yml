@@ -1,0 +1,16 @@
+en:
+  welcome: "Welcome to the Mortgage Calculator!"
+  init_info: "We are going to perform the calculation of the monthly interest rate and
+             the loan duration in months. We'll need three data from you: the loan amount, 
+             the annual percentage rate and the loan duration."
+  proceed: "Do you intend to proceed with the calculation? (Y or N)"
+  get_loan_amount: "What's the loan amount?"
+  not_number: "Please, you must type a number. (ex: 12 or 12.0)"
+  get_apr: "Now, type the Annual Percentage Rate (APR):"
+  get_loan_duration: "Please, type the loan duration. Must be a number between 1 and 30 (years):"
+  loan_duration_error: "The loan duration must be a number between 1 and 60 without decimals. Please, try again:"
+  goodbye: "Thanks for using the Mortgage Calculator! See you!"
+  another_calculation: "Do you want to perform another calculation?"
+  get_interest_rate: "What's the interest rate? (Example: 5 for 5% or 2.5 for 2.5%)"
+  invalid_interest_rate: "The interest rate must be a positive number. (Example: 5 for 5% or 2.5 for 2.5%)"
+  result: "The monthly payment will be:"

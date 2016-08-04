@@ -1,0 +1,16 @@
+en:
+  welcome: "Welcome to Calculator!"
+  get_num1: "Please, give me one number:"
+  not_number: "You must type only numbers, please."
+  get_num2: "Now, type the second number:"
+  get_operator: "Now, type an operator. (+ - / *)"
+  invalid_operator: "Operator not valid. Must be one of the following: '+ - / *'"
+  result: "The result is:"
+pt:
+  welcome: "Bem vindo à calculadora!"
+  get_num1: "Por favor, digite um número:"
+  not_number: "Desculpe, mas você deve digitar somente números."
+  get_num2: "Agora, digite o segundo número:"
+  get_operator: "Finalmente, digite o operador (+ - / *):"
+  invalid_operator: "operador inválido. Deve ser um dos seguintes: '+ - / *'"
+  result: "O resultado é:"

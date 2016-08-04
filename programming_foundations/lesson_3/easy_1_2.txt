@@ -1,0 +1,45 @@
+Question 1
+
+What would you expect the code below to print out?
+
+numbers = [1, 2, 2, 3]
+numbers.uniq
+
+puts numbers
+
+ANSWER:
+
+=> [1, 2, 3]
+
+(I did it wrong! uniq doesn't mutate numbers...)
+
+------------------------------------------------------------------
+
+Question 2
+
+Describe the difference between ! and ? in Ruby. And explain what would happen in the following scenarios:
+
+what is != and where should you use it?
+
+  ANSWER => not equal -> it can be used to check if two objects are different one from another.
+
+put ! before something, like !user_name
+
+  ANSWER => changes the actual boolean to the opposite. ex: !true -> false
+
+put ! after something, like words.uniq!
+
+  ANSWER => it indicates that the method mutates the original object.
+
+put ? before something
+
+  ANSWER => it does not indicate anything. 
+
+put ? after something
+
+  ANSWER => it indicates that the method returns a boolean.
+
+put !! before something, like !!user_name
+
+  ANSWER => (I didn't know the answer) -> is used to turn any object into their boolean equivalent.
+  
