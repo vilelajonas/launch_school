@@ -23,7 +23,6 @@ def win?(first, second)
     (first == 'lizard' && second == 'spock')
 end
 
-
 def display_results(player, computer)
   if win?(player, computer)
     prompt("You won!")
@@ -54,7 +53,7 @@ loop do
     computer_choice = VALID_CHOICES.sample
     prompt("You chose: #{choice}; Computer chose: #{computer_choice}")
     display_results(choice, computer_choice)
-    
+
     player_score += 1 if win?(choice, computer_choice)
     computer_score += 1 if win?(computer_choice, choice)
     prompt("SCORE -> YOU #{player_score} x #{computer_score} COMPUTER")
