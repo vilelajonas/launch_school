@@ -1,0 +1,26 @@
+Question 6
+
+Alyssa was asked to write an implementation of a rolling buffer. Elements are added to the rolling buffer and if the buffer becomes full, then new elements that are added will displace the oldest elements in the buffer.
+
+She wrote two implementations saying, "Take your pick. Do you like << or + for modifying the buffer?". Is there a difference between the two, other than what operator she chose to use to add an element to the buffer?
+
+def rolling_buffer1(buffer, max_buffer_size, new_element)
+  buffer << new_element
+  buffer.shift if buffer.size >= max_buffer_size
+  buffer
+end
+
+def rolling_buffer2(input_array, max_buffer_size, new_element)
+  buffer = input_array + [new_element]
+  buffer.shift if buffer.size >= max_buffer_size
+  buffer
+end
+
+
+ANSWER:
+
+  I prefer the + for modifying the buffer for one reason:
+
+  On rolling_buffer1 the buffer parameter must be declared outside of the method and when you use << you will mutate it. I think it could be dangerous to change an array outside the method.
+
+  I'd prefer the rolling_buffer2 method, because you pass an input_array as a parameter and inside the method you create a new array called buffer and than you modify it. So, you don't change anything outside the method.
